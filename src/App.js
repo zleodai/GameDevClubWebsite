@@ -25,6 +25,33 @@ function App() {
     }
   };
 
+  const upcomingEvents = [
+    {
+      Title: "Weekly Meetings",
+      Time: "Wednesday, 7:30pm",
+      Location: "Pereria Hall Room 206",
+      Description: "Our weekly Meetings"
+    },
+    {
+      Title: "Fall Game Jam",
+      Time: "Friday, October 17th - Sunday, October 19th",
+      Location: "Pereria Hall Room 206",
+      Description: "A 48-Hour Gamemaking competition."
+    },
+    {
+      Title: "Weekly Meetings",
+      Time: "Wednesday, 7:30pm",
+      Location: "Pereria Hall Room 206",
+      Description: "Our weekly Meetings"
+    },
+    {
+      Title: "Weekly Meetings",
+      Time: "Wednesday, 7:30pm",
+      Location: "Pereria Hall Room 206",
+      Description: "Our weekly Meetings"
+    },
+  ]
+
   const showcaseGames = [
     {
       Title: "Unstable",
