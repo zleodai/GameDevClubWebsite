@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/GameDevClubPortfolioWebsite/static/css/main.6a6231b1.css",
+    "main.js": "/GameDevClubPortfolioWebsite/static/js/main.857a5f71.js",
+    "static/js/453.b9bd4ec1.chunk.js": "/GameDevClubPortfolioWebsite/static/js/453.b9bd4ec1.chunk.js",
+    "static/media/revicons.eot": "/GameDevClubPortfolioWebsite/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/GameDevClubPortfolioWebsite/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/GameDevClubPortfolioWebsite/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/GameDevClubPortfolioWebsite/index.html",
+    "main.6a6231b1.css.map": "/GameDevClubPortfolioWebsite/static/css/main.6a6231b1.css.map",
+    "main.857a5f71.js.map": "/GameDevClubPortfolioWebsite/static/js/main.857a5f71.js.map",
+    "453.b9bd4ec1.chunk.js.map": "/GameDevClubPortfolioWebsite/static/js/453.b9bd4ec1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a6231b1.css",
+    "static/js/main.857a5f71.js"
+  ]
+}
