@@ -106,7 +106,7 @@ function App() {
           responsive={responsive} 
           className="Carousel"
           autoPlay={true}
-          autoPlaySpeed={6000}
+          autoPlaySpeed={5999}
           transitionDuration={6000}
           infinite={true}
           pauseOnHover={true}
