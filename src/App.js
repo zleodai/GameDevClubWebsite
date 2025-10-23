@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 function App() {
   const responsive = {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
-    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2},
     tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
   };
@@ -22,7 +22,7 @@ function App() {
     {
       Title: "Eye Spy",
       Authors: "",
-      Description: "Top-down shooter with shaders",
+      Description: "Hello, this is from agency headquarters. We just received news of an enemy base in downtown, and we are down to just one agent: Agent James Blind. He is one of our best. However, he is blind, so you must assist him. You will need to navigate him by YELLING at him through his earpiece to know where he needs to go. Be careful during this infiltration operation, as enemies and traps are there to stop Agent James Blind.",
       Link: "https://undalevein.itch.io/eye-spy",
       Image: "https://img.itch.zone/aW1nLzIzNjg4OTMxLnBuZw==/original/H0Itwn.png"
     },
@@ -82,7 +82,16 @@ function App() {
       <div className="CarouselSection">
         <h2 className="CarouselTitle">Fall 2025 Game Jam Showcase</h2>
         <h2 className="CarouselTitle">Theme: Eyes</h2>
-        <Carousel responsive={responsive} className="Carousel">
+        <Carousel 
+          responsive={responsive} 
+          className="Carousel"
+          autoPlay={true}
+          autoPlaySpeed={6000}
+          transitionDuration={6000}
+          infinite={true}
+          pauseOnHover={true}
+          draggable={true}          
+        >
           {showcaseGames2025.map((item, index) => (
             <CarouselItem key={index} item={item} />
           ))}
@@ -93,7 +102,16 @@ function App() {
       <div className="CarouselSection">
         <h2 className="CarouselTitle">Fall 2024 Game Jam Showcase</h2>
         <h2 className="CarouselTitle">Theme: Unstable</h2>
-        <Carousel responsive={responsive} className="Carousel">
+        <Carousel 
+          responsive={responsive} 
+          className="Carousel"
+          autoPlay={true}
+          autoPlaySpeed={6000}
+          transitionDuration={6000}
+          infinite={true}
+          pauseOnHover={true}
+          draggable={true}          
+        >
           {showcaseGames2024.map((item, index) => (
             <CarouselItem key={index} item={item} />
           ))}

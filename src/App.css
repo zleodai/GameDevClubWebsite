@@ -1,4 +1,4 @@
-/* ====== Global Styles ====== */
+/* ====== Global Reset & Base Styles ====== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ====== App Container ====== */
+/* ====== App Layout ====== */
 .AppContent {
   min-height: 100vh;
   width: 100vw;
@@ -21,7 +21,7 @@ body {
   align-items: center;
 }
 
-/* ====== Top and Middle Sections ====== */
+/* ====== Header & Intro Sections ====== */
 .AppTop {
   width: 100%;
   text-align: center;
@@ -38,16 +38,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 1.5rem;
+  min-height: 2rem;
   min-width: 100vw;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #cbd5e1;
   text-align: center;
-  margin-top: 2rem;
   padding: 2rem;
+  margin-top: 1.2rem;
+  line-height: 1.5;
+  max-width: 900px;
 }
 
-/* ====== Carousel Sections ====== */
+/* ====== Carousel Section ====== */
 .CarouselSection {
   width: 100%;
   padding: 60px 0;
@@ -64,12 +66,22 @@ body {
   letter-spacing: 2px;
 }
 
-/* ====== Carousel Item (Individual Cards) ====== */
+/* ====== Carousel Wrapper ====== */
+.Carousel {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.react-multi-carousel-item {
+  padding: 0 15px;
+}
+
+/* ====== Carousel Cards ====== */
 .CarouselItem {
   position: relative;
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
-  height: 40vh;
+  height: 55vh; /* ✅ Larger cards */
   color: #fff;
   display: flex;
   align-items: flex-end;
@@ -77,39 +89,42 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .CarouselItem:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transform: scale(1.04);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
 }
 
+/* ====== Overlay & Text Inside Cards ====== */
 .CarouselItemOverlay {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
   width: 100%;
-  padding: 1.2rem;
+  padding: 1.5rem;
   text-align: center;
-  backdrop-filter: blur(2px);
 }
 
 .CarouselItem h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 .CarouselItem h4 {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.9;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .CarouselItem p {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* ✅ Smaller text */
+  line-height: 1.3;
   opacity: 0.85;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /* ====== Buttons ====== */
@@ -132,27 +147,49 @@ body {
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
 }
 
-/* ====== Carousel Base Overrides ====== */
-.Carousel {
-  width: 85%;
-  margin: 0 auto;
+/* ====== Hover Effects & Transitions ====== */
+.CarouselItem:hover .CarouselItemOverlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.react-multi-carousel-item {
-  padding: 0 10px;
-}
-
-/* ====== Responsive ====== */
-@media (max-width: 768px) {
+/* ====== Responsive Design ====== */
+@media (max-width: 1024px) {
   .AppTop {
     font-size: 2rem;
   }
 
   .CarouselItem {
-    height: 35vh;
+    height: 45vh;
   }
 
-  .CarouselTitle {
-    font-size: 1.5rem;
+  .CarouselItem h2 {
+    font-size: 1.4rem;
+  }
+
+  .CarouselItem p {
+    font-size: 0.75rem;
+  }
+
+  .Carousel {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .AppMiddle {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .CarouselItem {
+    height: 40vh;
+  }
+
+  .CarouselItem h2 {
+    font-size: 1.2rem;
+  }
+
+  .CarouselItem p {
+    font-size: 0.7rem;
   }
 }
