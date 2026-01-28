@@ -24,7 +24,7 @@ function App() {
     }
   };
 
-  const showcaseGames2025 = [
+  const fall2025Games = [
     {
       Title: "Photophobic",
       Authors: "Leo Dai, Lawrence Benitez",
@@ -48,7 +48,7 @@ function App() {
     },
   ];
 
-  const showcaseGames2024 = [
+  const fall2024Games = [
     {
       Title: "Unstable",
       Authors: "Leo Dai, Lawrence Benitez, Aiden Macdougald",
@@ -96,14 +96,14 @@ function App() {
         <h2 className="CarouselTitle">Fall 2025 Game Jam Showcase</h2>
         <h2 className="CarouselTitle">Theme: Eyes</h2>
         <Carousel responsive={responsive} className="Carousel">
-          {showcaseGames2025.map((item) => <CarouselItem key={item.Title} item={item}/>)}
+          {fall2025Games.map((item) => <CarouselItem key={item.Title} item={item}/>)}
         </Carousel>
       </div>
       <div className="CarouselContainer">
         <h2 className="CarouselTitle">Fall 2024 Game Jam Showcase</h2>
         <h2 className="CarouselTitle">Theme: Unstable</h2>
         <Carousel responsive={responsive} className="Carousel">
-          {showcaseGames2024.map((item) => <CarouselItem key={item.Title} item={item}/>)}
+          {fall2024Games.map((item) => <CarouselItem key={item.Title} item={item}/>)}
         </Carousel>
       </div>
     </div>
