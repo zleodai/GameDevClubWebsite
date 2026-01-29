@@ -26,7 +26,7 @@ function App() {
 
   const fall2025Games = [
     {
-      Title: "Photophobic",
+      Title: "Photophobic yEYEme",
       Authors: "Leo Dai, Lawrence Benitez",
       Description: "Power failure at Site 11b. Backup generators failed to start. Entity 7247 Containment breached. Entity is extremely mobile, using its tentacles to grip and tear anything near it. ",
       Link: "https://law47.itch.io/photophobic-teyeme",
@@ -84,6 +84,16 @@ function App() {
     }
   ];
 
+  const spring2024Games = [
+    {
+      Title: "Tax Invasion",
+      Authors: "Clifford Phillips",
+      Description: "After advancements in space travel, humans began sending satellites and radio signals further, and further out into deep space looking for intelligent life. Unfortunately, one of these messages was intercepted by an alien empire bent on exerting their will across the universe. They have subjugated every other planet into paying massive taxes to fund their conquest. The message contained information on human anatomy, society, art, literature, philosophy, and history, along with our home address. With the coordinates for our planet, the aliens launched a surprise attack and conquered Earth with their superior technology. Now, they are demanding tribute, but the war has bankrupted the world economy and humanity is refusing to pay the taxes, and the aliens are done asking nicely. They will use any means necessary to drain Earth's resources to fuel their vast empire. Now, it is up to a rogue group of human resistance fighters to defend Earth from the intergalactic tax-collecting menace.",
+      Link: "https://siegesg.itch.io/tax-invasion",
+      Image: "https://img.itch.zone/aW1nLzE1MzcxODEzLnBuZw==/original/Kngteo.png"
+    },
+  ];
+
   return (
     <div className="AppContent">
       <div className="AppTop">
@@ -104,6 +114,13 @@ function App() {
         <h2 className="CarouselTitle">Theme: Unstable</h2>
         <Carousel responsive={responsive} className="Carousel">
           {fall2024Games.map((item) => <CarouselItem key={item.Title} item={item}/>)}
+        </Carousel>
+      </div>
+      <div className="CarouselContainer">
+        <h2 className="CarouselTitle">Spring 2024 Game Jam Showcase</h2>
+        <h2 className="CarouselTitle">Theme: Open Theme</h2>
+        <Carousel responsive={responsive} className="Carousel">
+          {spring2024Games.map((item) => <CarouselItem key={item.Title} item={item}/>)}
         </Carousel>
       </div>
     </div>
