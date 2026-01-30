@@ -34,7 +34,7 @@ function App() {
     },
     {
       Title: "Eye Spy",
-      Authors: "",
+      Authors: "Colin Teoh, Kate Chua, Wesley Ng, Seth Saunooke",
       Description: "Hello, this is from agency headquarters. We just received news of an enemy base in downtown, and we are down to just one agent: Agent James Blind. He is one of our best. However, he is blind, so you must assist him. You will need to navigate him by YELLING at him through his earpiece to know where he needs to go. Be careful during this infiltration operation, as enemies and traps are there to stop Agent James Blind.",
       Link: "https://undalevein.itch.io/eye-spy",
       Image: "https://img.itch.zone/aW1nLzIzNjg4OTMxLnBuZw==/original/H0Itwn.png"
@@ -58,14 +58,14 @@ function App() {
     },
     {
       Title: "The Nut Case",
-      Authors: "",
+      Authors: "Ataysia Self, Joseph Shoen, Wesley Ng, Alejandro Marcovich",
       Description: "A detective wakes up from a crazy dream. When sent to investigate a mental ward, he’s knocked out and trapped inside. While trying to escape, he faces monsters and mysteries, but are these hallucinations or is this his new reality? Join the adventure to help him discover the mystery.",
       Link: "https://boastful-birdie.itch.io/game-jam-the-nut-case",
       Image: "https://img.itch.zone/aW1nLzE4NTM1ODQ3LnBuZw==/original/FR9R2m.png"
     },
     {
       Title: "StickyStack'ems",
-      Authors: "",
+      Authors: "Adi Roitberg, Milo Fritzen (?), ???",
       Description: "",
       Link: "https://milo-coding.itch.io/sticky-stackems",
       Image: "https://img.itch.zone/aW1nLzE4NTM3NTYyLnBuZw==/original/zgAE2p.png"
@@ -87,7 +87,7 @@ function App() {
   const spring2024Games = [
     {
       Title: "Tax Invasion",
-      Authors: "Clifford Phillips",
+      Authors: "Clifford Phillips, Wesley Ng, Michael Ford",
       Description: "After advancements in space travel, humans began sending satellites and radio signals further, and further out into deep space looking for intelligent life. Unfortunately, one of these messages was intercepted by an alien empire bent on exerting their will across the universe. They have subjugated every other planet into paying massive taxes to fund their conquest. The message contained information on human anatomy, society, art, literature, philosophy, and history, along with our home address. With the coordinates for our planet, the aliens launched a surprise attack and conquered Earth with their superior technology. Now, they are demanding tribute, but the war has bankrupted the world economy and humanity is refusing to pay the taxes, and the aliens are done asking nicely. They will use any means necessary to drain Earth's resources to fuel their vast empire. Now, it is up to a rogue group of human resistance fighters to defend Earth from the intergalactic tax-collecting menace.",
       Link: "https://siegesg.itch.io/tax-invasion",
       Image: "https://img.itch.zone/aW1nLzE1MzcxODEzLnBuZw==/original/Kngteo.png"
